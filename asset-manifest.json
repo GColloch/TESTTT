@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/TESTTT/static/css/main.5c5b27d0.css",
+    "main.js": "/TESTTT/static/js/main.72a2c78f.js",
+    "static/media/fondAnime.png": "/TESTTT/static/media/fondAnime.abade86bd597f318ce71.png",
+    "static/media/fondAnime1.png": "/TESTTT/static/media/fondAnime1.6fba0a694949d76b4874.png",
+    "index.html": "/TESTTT/index.html",
+    "main.5c5b27d0.css.map": "/TESTTT/static/css/main.5c5b27d0.css.map",
+    "main.72a2c78f.js.map": "/TESTTT/static/js/main.72a2c78f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5c5b27d0.css",
+    "static/js/main.72a2c78f.js"
+  ]
+}
