@@ -1,0 +1,669 @@
+.background-image-block {
+  position: relative;
+  width: 100%;
+  max-width: 100%; /* Ajustez la largeur maximale selon vos besoins */
+  overflow: hidden;
+}
+
+.background-image {
+  background-image: url('../../../public/media/header/fondAnime.png');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh; /* Ajustez la hauteur selon vos besoins */
+}
+.background-image2 {
+  background-image: url('../../../public/media/header/fondAnime1.png');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 50vh; /* Ajustez la hauteur selon vos besoins */
+  margin-bottom: 100px;
+}
+
+.overlay-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+.overlay-button {
+  position: absolute;
+  bottom: 10%;
+  left: 44%;
+  font-size: 16px;
+  background-color: #ff6b35;
+  font-family: 'Comme';
+  font-weight: bold;
+  color: white;
+  border: none;
+  padding: 15px 15px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  font-weight: bold;
+  span {
+    color: #ff6b35;
+  }
+}
+.background-overlay {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  width: 40%; /* Ajustez la largeur selon vos besoins */
+  height: auto;
+  object-fit: contain; /* Utilisez "contain" pour conserver les proportions de l'image */
+}
+.background-overlay2 {
+  position: absolute;
+  top: 9%;
+  left: 58%;
+  width: 16%; /* Ajustez la largeur selon vos besoins */
+  height: auto;
+  transform: rotate(-2deg); /* Remplacez l'angle (45deg) par la valeur de rotation souhaitée */
+  object-fit: contain; /* Utilisez "contain" pour conserver les proportions de l'image */
+}
+.background-overlay-text {
+  position: absolute;
+  color: white;
+  font-family: 'manga';
+  font-size: 2.5em;
+  top: 38%;
+  left: 30%;
+  height: auto;
+  object-fit: contain; /* Utilisez "contain" pour conserver les proportions de l'image */
+}
+.background-overlay-text2 {
+  position: absolute;
+  color: white;
+  font-family: 'manga';
+  font-size: 6em;
+  left: 35%;
+  top: 40%;
+  margin: auto;
+}
+.overlay-image-left {
+  position: absolute;
+  top: 25%;
+  left: -21%;
+  transform: rotate(45deg); /* Remplacez l'angle (45deg) par la valeur de rotation souhaitée */
+  width: 35%;
+  height: auto;
+  z-index: 2;
+}
+
+.overlay-image-right {
+  position: absolute;
+  top: -40%;
+  right:-14%;
+  width: 35%;
+  height: auto;
+  z-index: 2;  
+
+}
+
+@media screen and (max-width: 1400px) {
+  .background-overlay {
+    position: absolute;
+    top: 16%;
+    left: 25%;
+    width: 45%; /* Ajustez la largeur selon vos besoins */
+    height: auto;
+    object-fit: contain; /* Utilisez "contain" pour conserver les proportions de l'image */
+  }
+  .background-overlay2 {
+    position: absolute;
+    top: 13%;
+    left: 56%;
+    width: 20%; /* Ajustez la largeur selon vos besoins */
+    height: auto;
+    transform: rotate(-2deg); /* Remplacez l'angle (45deg) par la valeur de rotation souhaitée */
+    object-fit: contain; /* Utilisez "contain" pour conserver les proportions de l'image */
+  }
+  .overlay-image-left {
+    position: absolute;
+    top: 25%;
+    left: -21%;
+    transform: rotate(45deg); /* Remplacez l'angle (45deg) par la valeur de rotation souhaitée */
+    width: 35%;
+    height: auto;
+    z-index: 2;
+  }
+  
+  .overlay-image-right {
+    position: absolute;
+    top: -35%;
+    right:-13%;
+    width: 35%;
+    height: auto;
+    z-index: 2;  
+  }
+  .background-overlay-text {
+    position: absolute;
+    color: white;
+    font-family: 'manga';
+    font-size: 2.5em;
+    top: 45%;
+    left: 23%;
+    height: auto;
+    object-fit: contain; /* Utilisez "contain" pour conserver les proportions de l'image */
+  }
+  .background-overlay-text2 {
+    position: absolute;
+    color: white;
+    font-family: 'manga';
+    font-size: 5em;
+    left: 35%;
+    top: 50%;
+    margin: auto;
+  }
+  
+  .overlay-button {
+    position: absolute;
+    bottom: 6%;
+    left: 43%;
+    font-size: 16px;
+    border: none;
+    padding: 15px 15px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .overlay-text {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 0.7em;
+    height: auto;
+    font-weight: bold;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .background-overlay {
+    position: absolute;
+    top: 20%;
+    left: 23%;
+    width: 55%; /* Ajustez la largeur selon vos besoins */
+    height: auto;
+    object-fit: contain; /* Utilisez "contain" pour conserver les proportions de l'image */
+  }
+  .background-overlay2 {
+    position: absolute;
+    top: 16%;
+    left: 60%;
+    width: 25%; /* Ajustez la largeur selon vos besoins */
+    height: auto;
+    transform: rotate(-2deg); /* Remplacez l'angle (45deg) par la valeur de rotation souhaitée */
+    object-fit: contain; /* Utilisez "contain" pour conserver les proportions de l'image */
+  }
+  .overlay-image-right {
+    position: absolute;
+    top: -31%;
+    right:-13%;
+    width: 35%;
+    height: auto;
+    z-index: 2;  
+  }
+  .overlay-image-left {
+    position: absolute;
+    top: 25%;
+    left: -21%;
+    transform: rotate(45deg); /* Remplacez l'angle (45deg) par la valeur de rotation souhaitée */
+    width: 35%;
+    height: auto;
+    z-index: 2;
+  }
+  .background-overlay-text {
+    position: absolute;
+    color: white;
+    font-family: 'manga';
+    font-size: 2.5em;
+    top: 49%;
+    left: 23%;
+    height: auto;
+    object-fit: contain; /* Utilisez "contain" pour conserver les proportions de l'image */
+  }
+  .overlay-button {
+    position: absolute;
+    bottom: 6%;
+    left: 43%;
+    font-size: 13px;
+    border: none;
+    padding: 15px 15px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .overlay-text {
+    position: absolute;
+    bottom: 2px;
+    text-align: center;
+    width: 100%;
+    font-size: 0.7em;
+    height: auto;
+    font-weight: bold;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .background-image {
+    background-image: url('../../../public/media/header/fondAnime.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 90vh; /* Ajustez la hauteur selon vos besoins */
+  }
+  .background-image2 {
+    background-image: url('../../../public/media/header/fondAnime.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 18vh; /* Ajustez la hauteur selon vos besoins */
+  }
+  .background-overlay {
+    position: absolute;
+    top: 19%;
+    left: 23%;
+    width: 55%; /* Ajustez la largeur selon vos besoins */
+    height: auto;
+    object-fit: contain; /* Utilisez "contain" pour conserver les proportions de l'image */
+  }
+  .background-overlay2 {
+    position: absolute;
+    top: 15%;
+    left: 61%;
+    width: 25%; /* Ajustez la largeur selon vos besoins */
+    height: auto;
+    transform: rotate(2deg); /* Remplacez l'angle (45deg) par la valeur de rotation souhaitée */
+    object-fit: contain; /* Utilisez "contain" pour conserver les proportions de l'image */
+  }
+  .overlay-image-right {
+    position: absolute;
+    top: -29%;
+    right:-13%;
+    width: 35%;
+    height: auto;
+    z-index: 2;  
+  }
+  .background-overlay-text {
+    position: absolute;
+    color: white;
+    font-family: 'manga';
+    font-size: 2em;
+    top: 45%;
+    left: 23%;
+    height: auto;
+    object-fit: contain; /* Utilisez "contain" pour conserver les proportions de l'image */
+  }
+  .background-overlay-text2 {
+    position: absolute;
+    color: white;
+    font-family: 'manga';
+    font-size: 3em;
+    left: 35%;
+    top: 36%;
+    margin: auto;
+  }
+  .overlay-button {
+    position: absolute;
+    bottom: 4%;
+    left: 42%;
+    font-size: 13px;
+    border: none;
+    padding: 15px 15px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .overlay-text {
+    position: absolute;
+    bottom: -1px;
+    text-align: center;
+    width: 100%;
+    font-size: 0.5em;
+    height: auto;
+    font-weight: bold;
+  }
+}
+@media screen and (max-width: 900px) {
+  .background-overlay {
+    position: absolute;
+    top: 30%;
+    left: 23%;
+    width: 55%; /* Ajustez la largeur selon vos besoins */
+    height: auto;
+    object-fit: contain; /* Utilisez "contain" pour conserver les proportions de l'image */
+  }
+  .background-overlay2 {
+    position: absolute;
+    top: 27%;
+    left: 61%;
+    width: 25%; /* Ajustez la largeur selon vos besoins */
+    height: auto;
+    transform: rotate(2deg); /* Remplacez l'angle (45deg) par la valeur de rotation souhaitée */
+    object-fit: contain; /* Utilisez "contain" pour conserver les proportions de l'image */
+  }
+  .overlay-image-right {
+    position: absolute;
+    top: -26%;
+    right:-12.5%;
+    width: 35%;
+    height: auto;
+    z-index: 2;  
+  }
+  .background-overlay-text {
+    position: absolute;
+    color: white;
+    font-family: 'manga';
+    font-size: 2em;
+    top: 53%;
+    left: 23%;
+    height: auto;
+    object-fit: contain; /* Utilisez "contain" pour conserver les proportions de l'image */
+  }
+  .overlay-button {
+    position: absolute;
+    bottom: 5%;
+    left: 44%;
+    font-size: 9px;
+    border: none;
+    padding: 10px 10px;
+    height: auto;
+  }
+  .overlay-text {
+    position: absolute;
+    bottom: 5px;
+    text-align: center;
+    width: 100%;
+    font-size: 0.5em;
+    height: auto;
+    font-weight: bold;
+  }
+}
+@media screen and (max-width: 800px) {
+  .background-overlay {
+    position: absolute;
+    top: 36%;
+    left: 23%;
+    width: 55%; /* Ajustez la largeur selon vos besoins */
+    height: auto;
+    object-fit: contain; /* Utilisez "contain" pour conserver les proportions de l'image */
+  }
+  .background-overlay2 {
+    position: absolute;
+    top: 32%;
+    left: 60%;
+    width: 27%; /* Ajustez la largeur selon vos besoins */
+    height: auto;
+    transform: rotate(2deg); /* Remplacez l'angle (45deg) par la valeur de rotation souhaitée */
+    object-fit: contain; /* Utilisez "contain" pour conserver les proportions de l'image */
+  }
+  .overlay-image-right {
+    position: absolute;
+    top: -26%;
+    right:-14%;
+    width: 40%;
+    height: auto;
+    z-index: 2;  
+  }
+  .overlay-image-left {
+    position: absolute;
+    top: 25%;
+    left: -23.9%;
+    transform: rotate(45deg); /* Remplacez l'angle (45deg) par la valeur de rotation souhaitée */
+    width: 40%;
+    height: auto;
+    z-index: 2;
+  }
+  .background-overlay-text {
+    position: absolute;
+    color: white;
+    font-family: 'manga';
+    font-size: 1.6em;
+    top: 55%;
+    left: 23%;
+    height: auto;
+    object-fit: contain; /* Utilisez "contain" pour conserver les proportions de l'image */
+  }
+  .overlay-button {
+    position: absolute;
+    bottom: 4.5%;
+    left: 44%;
+    font-size: 7px;
+    border: none;
+    padding: 10px 10px;
+    height: auto;
+  }
+  .overlay-text {
+    position: absolute;
+    bottom: 9px;
+    text-align: center;
+    width: 100%;
+    font-size: 0.4em;
+    height: auto;
+    font-weight: bold;
+  }
+}
+@media screen and (max-width: 700px) {
+  .background-image {
+    background-image: url('../../../public/media/header/fondAnime.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 50vh; /* Ajustez la hauteur selon vos besoins */
+  }
+  .background-image2 {
+    background-image: url('../../../public/media/header/fondAnime.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 15vh; /* Ajustez la hauteur selon vos besoins */
+  }
+  .background-overlay {
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    width: 40%; /* Ajustez la largeur selon vos besoins */
+    height: auto;
+    object-fit: contain; /* Utilisez "contain" pour conserver les proportions de l'image */
+  }
+  .background-overlay2 {
+    position: absolute;
+    top: 19%;
+    left: 62%;
+    width: 20%; /* Ajustez la largeur selon vos besoins */
+    height: auto;
+    transform: rotate(2deg); /* Remplacez l'angle (45deg) par la valeur de rotation souhaitée */
+    object-fit: contain; /* Utilisez "contain" pour conserver les proportions de l'image */
+  }
+  .overlay-image-right {
+    position: absolute;
+    top: -37.5%;
+    right:-14.2%;
+    width: 40%;
+    height: auto;
+    z-index: 2;  
+  }
+  .background-overlay-text {
+    position: absolute;
+    color: white;
+    font-family: 'manga';
+    font-size: 1.3em;
+    top: 50%;
+    left: 29%;
+    height: auto;
+    object-fit: contain; /* Utilisez "contain" pour conserver les proportions de l'image */
+  }
+  .background-overlay-text2 {
+    position: absolute;
+    color: white;
+    font-family: 'manga';
+    font-size: 2em;
+    left: 35%;
+    top: 35%;
+    margin: auto;
+  }
+  .overlay-button {
+    position: absolute;
+    bottom: 7%;
+    left: 45%;
+    font-size: 5px;
+    border: none;
+    padding: 8px 8px;
+    height: auto;
+  }
+  .overlay-text {
+    position: absolute;
+    bottom: 9px;
+    text-align: center;
+    width: 100%;
+    font-size: 0.4em;
+    height: auto;
+    font-weight: bold;
+  }
+}
+@media screen and (max-width: 600px) {
+  .background-overlay {
+    position: absolute;
+    top: 23%;
+    left: 30%;
+    width: 45%; /* Ajustez la largeur selon vos besoins */
+    height: auto;
+    object-fit: contain; /* Utilisez "contain" pour conserver les proportions de l'image */
+  }
+  .background-overlay2 {
+    position: absolute;
+    top: 21%;
+    left: 62%;
+    width: 20%; /* Ajustez la largeur selon vos besoins */
+    height: auto;
+    transform: rotate(2deg); /* Remplacez l'angle (45deg) par la valeur de rotation souhaitée */
+    object-fit: contain; /* Utilisez "contain" pour conserver les proportions de l'image */
+  }
+  .overlay-image-right {
+    position: absolute;
+    top: -28.5%;
+    right:-13%;
+    width: 35%;
+    height: auto;
+    z-index: 2;  
+  }
+  .overlay-image-left {
+    position: absolute;
+    top: 25%;
+    left: -23%;
+    transform: rotate(45deg); /* Remplacez l'angle (45deg) par la valeur de rotation souhaitée */
+    width: 40%;
+    height: auto;
+    z-index: 2;
+  }
+  .background-overlay-text {
+    position: absolute;
+    color: white;
+    font-family: 'manga';
+    font-size: 1.1em;
+    top: 47%;
+    left: 25%;
+    height: auto;
+    object-fit: contain; /* Utilisez "contain" pour conserver les proportions de l'image */
+  }
+  .background-overlay-text2 {
+    position: absolute;
+    color: white;
+    font-family: 'manga';
+    font-size: 2em;
+    left: 33%;
+    top: 28%;
+    margin: auto;
+  }
+  .overlay-button {
+    position: absolute;
+    bottom: 5%;
+    left: 43%;
+    font-size: 6px;
+    border: none;
+    padding: 8px 8px;
+    height: auto;
+  }
+  .overlay-text {
+    position: absolute;
+    bottom: 2px;
+    text-align: center;
+    width: 100%;
+    font-size: 6px;
+    height: auto;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .background-overlay {
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    width: 45%; /* Ajustez la largeur selon vos besoins */
+    height: auto;
+    object-fit: contain; /* Utilisez "contain" pour conserver les proportions de l'image */
+  }
+  .background-overlay2 {
+    position: absolute;
+    top: 31%;
+    left: 61%;
+    width: 22%; /* Ajustez la largeur selon vos besoins */
+    height: auto;
+    transform: rotate(2deg); /* Remplacez l'angle (45deg) par la valeur de rotation souhaitée */
+    object-fit: contain; /* Utilisez "contain" pour conserver les proportions de l'image */
+  }
+  .overlay-image-right {
+    position: absolute;
+    top: -29%;
+    right:-14.3%;
+    width: 40%;
+    height: auto;
+    z-index: 2;  
+  }
+  .overlay-image-left {
+    position: absolute;
+    top: 25%;
+    left: -23.6%;
+    transform: rotate(45deg); /* Remplacez l'angle (45deg) par la valeur de rotation souhaitée */
+    width: 40%;
+    height: auto;
+    z-index: 2;
+  }
+  .background-overlay-text {
+    position: absolute;
+    color: white;
+    font-family: 'manga';
+    font-size: 0.9em;
+    top: 53%;
+    left: 25%;
+    height: auto;
+    object-fit: contain; /* Utilisez "contain" pour conserver les proportions de l'image */
+  }
+  .overlay-button {
+    position: absolute;
+    bottom: 4%;
+    left: 43%;
+    font-size: 5px;
+    border: none;
+    padding: 6px 6px;
+    height: auto;
+  }
+  .overlay-text {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 5.9px;
+    height: auto;
+    font-weight: bold;
+  }
+}
+
+

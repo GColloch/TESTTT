@@ -1,0 +1,29 @@
+.containerLivraison {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.textLivraison {
+  padding: 20px;
+  font-size: 20px;
+  position: relative;
+  z-index: 1;
+  font-weight: bold;
+
+  @media (max-width: 768px) {
+    font-size: 12px; // Taille de police pour les petits écrans
+  }
+}
+
+.containerLivraison::before {
+  content: '';
+  background-color: #c3d7cc; // Couleur de fond (ici rouge)
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}

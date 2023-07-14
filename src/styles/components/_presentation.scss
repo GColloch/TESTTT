@@ -1,0 +1,701 @@
+.banner-container {
+  margin-top: 100px;
+  position: relative;
+  background-color: #ff6b35;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.banner-image {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 100;
+  height: auto;
+  width: 25%;
+  animation: slideIn 1s forwards;
+}
+
+.banner-content {
+  text-align: center;
+  margin: auto;
+}
+
+.banner-title {
+  font-size: 4em;
+  font-family: 'manga';
+  margin: auto;
+  color: #ffffff;
+}
+
+.productCaroussel1{
+  border-radius: 20px;
+  width: 320px;
+  height: 430px;
+}
+.productCaroussel2{
+  border-radius: 20px;
+  width: 320px;
+  height: 430px;
+  margin-left: 300px;
+}
+.productCaroussel3{
+  border-radius: 20px;
+  width: 320px;
+  height: 430px;
+  margin-right: 300px;
+}
+
+#slider {
+  height: 10vw;
+  margin-top: 300px;
+  margin-bottom: 300px;
+  font-family: 'Helvetica Neue', sans-serif;
+  perspective: 1400px;
+  transform-style: preserve-3d;
+}
+
+input[type=radio] {
+  position: relative;
+  top: 108%;
+  width: 18px;
+  height: 18px;
+  margin: 0 15px 0 0;
+  opacity: 0;
+  transform: translateX(-83px);
+  cursor: pointer;
+}
+
+input[type=radio]:nth-child(5) {
+  margin-right: 0px;
+}
+
+input[type=radio]:checked {
+  opacity: 0;
+}
+
+#slider label,
+#slider label img {
+  position: absolute;
+  width: 75%;
+  left: 12%;
+  height: 60%;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 400ms ease;
+}
+#slider .mhacaroussel {
+  width: 55%;
+  left: 20%;
+  border: solid 5px;
+  height: auto;
+}
+#slider .DemonSlayercaroussel {
+  width: 70%;
+  height: auto;
+  left: 10%;
+}
+#slider .DBZ {
+  width: 50%;
+  height: auto;
+  left: 20%;
+}
+#slider .New {
+  position: absolute;
+  width: 26%;
+  top: 54%;
+  left: 56%;
+  height: auto;
+}
+
+#s1:checked ~ #slide1,
+#s2:checked ~ #slide2,
+#s3:checked ~ #slide3 {
+  transform: translate3d(0%, 0, 0px);
+}
+
+#s1:checked ~ #slide2,
+#s2:checked ~ #slide3,
+#s5:checked ~ #slide1 {
+  transform: translate3d(20%, 0, -100px);
+}
+
+#s1:checked ~ #slide3,
+#s2:checked ~ #slide1,
+#s3:checked ~ #slide2 {
+  transform: translate3d(-20%, 0, -100px);
+}
+@media screen and (min-width: 400px) {
+  .productCaroussel1 {
+    position: relative;
+    background-color: var(--sectionBack);
+    margin-bottom: 50px;
+    flex-direction: column;
+    padding: 20px 20px 20px;
+    background: linear-gradient(135deg, #dc799e, #f5ccbd);
+    transition: .3s;
+  }
+  .productCaroussel2 {
+    position: relative;
+    background-color: var(--sectionBack);
+    margin-bottom: 50px;
+    flex-direction: column;
+    padding: 20px 20px 20px;
+    background: linear-gradient(135deg, #dc799e, #f5ccbd);
+    transition: .3s;
+  }
+  .productCaroussel3 {
+    position: relative;
+    background-color: var(--sectionBack);
+    margin-bottom: 50px;
+    flex-direction: column;
+    padding: 20px 20px 20px;
+    background: linear-gradient(135deg, #dc799e, #f5ccbd);
+    transition: .3s;
+  }
+
+  .productCaroussel1:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+  }
+  .productCaroussel2:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+  }
+  .productCaroussel3:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+  }
+
+  .image2Caroussel {
+    padding-top: 70px;
+    width: 100%;
+    height: 60%;
+    display: grid;
+    place-content: center;
+  }
+
+  .namePriceCaroussel {
+    padding-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .namePriceCaroussel h3 {
+    z-index: 1000;
+    font-size: 0.3em;
+    position: absolute;
+    top: 5%;
+    text-transform: capitalize;
+    color: var(--textColor);
+    max-width: 76%;
+    left: 15%;
+    font-family: 'Comme';
+  }
+
+  .namePriceCaroussel span {
+    position: absolute;
+    font-size: 1.3em;
+    right: 10%;
+    bottom: 20%;
+    color: var(--starColor);
+    font-family: 'Comme';
+  }
+
+  .bayCaroussel {
+    position: absolute;
+    bottom: -10px;
+    left: 20%;
+  }
+
+  .bayCaroussel button {
+    padding: 10px 20px;
+    border-radius: 2px;
+    border: none;
+    background-color: #333d43;
+    color: white;
+    font-size: 8px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: .5s;
+    font-family: 'Comme';
+  }
+
+  .bayCaroussel button:hover {
+    transform: scale(1.1);
+  }
+
+  #slider label img {
+    position: absolute;
+    width: 80%;
+    top: 15%;
+    left: 10%;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 400ms ease;
+  }
+
+  .banner-container {
+    margin-top: 100px;
+    position: relative;
+    background-color: #ff6b35;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .banner-title {
+    font-size: 1.2em;
+    font-family: 'manga';
+    margin: auto;
+    color: #ffffff;
+  }
+
+  .banner-image {
+    position: absolute;
+    right: 0%;
+    top: 73%;
+    z-index: 100;
+    height: auto;
+    width: 35%;
+    animation: slideIn 1s forwards;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .banner-container {
+    margin-top: 100px;
+    position: relative;
+    background-color: #ff6b35;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .banner-title {
+    font-size: 1.5em;
+    font-family: 'manga';
+    margin: auto;
+    color: #ffffff;
+  }
+
+  .banner-image {
+    position: absolute;
+    right: 0%;
+    top: 66%;
+    z-index: 100;
+    height: auto;
+    width: 35%;
+    animation: slideIn 1s forwards;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .banner-container {
+    margin-top: 100px;
+    position: relative;
+    background-color: #ff6b35;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .banner-title {
+    font-size: 2em;
+    font-family: 'manga';
+    margin: auto;
+    color: #ffffff;
+  }
+
+  .banner-image {
+    position: absolute;
+    right: 0%;
+    top: 100%;
+    z-index: 100;
+    height: auto;
+    width: 30%;
+    animation: slideIn 1s forwards;
+  }
+  .namePriceCaroussel h3 {
+    z-index: 1000;
+    font-size: 0.3em;
+    position: absolute;
+    top: 5%;
+    text-transform: capitalize;
+    color: var(--textColor);
+    max-width: 76%;
+    left: 15%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .banner-container {
+    margin-top: 100px;
+    position: relative;
+    background-color: #ff6b35;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .banner-title {
+    font-size: 2.5em;
+    font-family: 'manga';
+    margin: auto;
+    color: #ffffff;
+  }
+
+  .banner-image {
+    position: absolute;
+    right: 0%;
+    top: 90%;
+    z-index: 100;
+    height: auto;
+    width: 35%;
+    animation: slideIn 1s forwards;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .banner-container {
+    margin-top: 100px;
+    position: relative;
+    background-color: #ff6b35;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .banner-image {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 100;
+    height: auto;
+    width: 25%;
+    animation: slideIn 1s forwards;
+  }
+
+  .banner-content {
+    text-align: center;
+    margin: auto;
+  }
+
+  .banner-title {
+    font-size: 4em;
+    font-family: 'manga';
+    margin: auto;
+    color: #ffffff;
+  }
+  .bayCaroussel {
+    position: absolute;
+    left: 30%;
+  }
+  .bayCaroussel button {
+    padding: 10px 20px;
+    border-radius: 2px;
+    border: none;
+    background-color: #333d43;
+    color: white;
+    font-size: 15px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: .5s;
+  }
+  .namePriceCaroussel h3 {
+    z-index: 1000;
+    font-size: 1.3em;
+    position: absolute;
+    top: 5%;
+    text-transform: capitalize;
+    color: var(--textColor);
+    max-width: 76%;
+  }
+}
+@media screen and (max-width: 1400px) {
+.productCaroussel1{
+  border-radius: 20px;
+  width: 280px;
+  height: 380px;
+  }
+.productCaroussel2{
+  border-radius: 20px;
+  width: 280px;
+  height: 380px;
+  margin-left: 250px;
+  }
+.productCaroussel3{
+  border-radius: 20px;
+  width: 280px;
+  height: 380px;
+  margin-right: 250px;
+  }
+  .namePriceCaroussel h3 {
+    z-index: 1000;
+    font-size: 1.1em;
+    position: absolute;
+    top: 5%;
+    text-transform: capitalize;
+    color: var(--textColor);
+    max-width: 76%;
+    left: 15%;
+  }
+  .bayCaroussel {
+    position: absolute;
+    left: 25%;
+  }
+  .bayCaroussel button {
+    padding: 10px 15px;
+    border-radius: 2px;
+    border: none;
+    background-color: #333d43;
+    color: white;
+    font-size: 15px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: .5s;
+  }
+  .productCaroussel1 p {
+    position: absolute;
+    bottom: 10%;
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .productCaroussel2 p {
+    position: absolute;
+    bottom: 10%;
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .productCaroussel3 p {
+    position: absolute;
+    bottom: 10%;
+    font-size: 15px;
+    line-height: 25px;
+  }
+  
+}
+
+@media screen and (max-width: 1000px) {
+  .productCaroussel1{
+    border-radius: 20px;
+    width: 200px;
+    height: 300px;
+    }
+  .productCaroussel2{
+    border-radius: 20px;
+    width: 200px;
+    height: 300px;
+    margin-left: 200px;
+    }
+  .productCaroussel3{
+    border-radius: 20px;
+    width: 200px;
+    height: 300px;
+    margin-right: 200px;
+    }
+    .namePriceCaroussel h3 {
+      z-index: 1000;
+      font-size: 0.8em;
+      position: absolute;
+      top: 5%;
+      text-transform: capitalize;
+      color: var(--textColor);
+      max-width: 76%;
+    }
+    .productCaroussel1 p {
+      position: absolute;
+      bottom: 10%;
+      font-size: 10px;
+      line-height: 20px;
+    }
+    .productCaroussel2 p {
+      position: absolute;
+      bottom: 10%;
+      font-size: 10px;
+      line-height: 20px;
+    }
+    .productCaroussel3 p {
+      position: absolute;
+      bottom: 10%;
+      font-size: 10px;
+      line-height: 20px;
+    }
+    .bayCaroussel {
+      position: absolute;
+      left: 25%;
+    }
+    .bayCaroussel button {
+      padding: 10px 15px;
+      border-radius: 2px;
+      border: none;
+      background-color: #333d43;
+      color: white;
+      font-size: 10px;
+      text-transform: capitalize;
+      cursor: pointer;
+      transition: .5s;
+    }
+    .namePriceCaroussel span {
+      position: absolute;
+      font-size: 1em;
+      right: 10%;
+      bottom: 20%;
+      color: var(--starColor);
+    }
+}
+
+@media screen and (max-width: 700px) {
+  .productCaroussel1{
+    border-radius: 20px;
+    width: 180px;
+    height: 260px;
+    }
+  .productCaroussel2{
+    border-radius: 20px;
+    width: 180px;
+    height: 260px;
+    margin-left: 200px;
+    }
+  .productCaroussel3{
+    border-radius: 20px;
+    width: 180px;
+    height: 260px;
+    margin-right: 200px;
+    }
+    .productCaroussel1 p {
+      position: absolute;
+      bottom: 10%;
+      font-size: 8px;
+      line-height: 20px;
+    }
+    .productCaroussel2 p {
+      position: absolute;
+      bottom: 10%;
+      font-size: 8px;
+      line-height: 20px;
+    }
+    .productCaroussel3 p {
+      position: absolute;
+      bottom: 10%;
+      font-size: 8px;
+      line-height: 20px;
+    }
+    .namePriceCaroussel h3 {
+      z-index: 1000;
+      font-size: 0.7em;
+      position: absolute;
+      top: 5%;
+      text-transform: capitalize;
+      color: var(--textColor);
+      max-width: 76%;
+    }   
+}
+@media screen and (max-width: 550px) {
+  .productCaroussel1{
+    border-radius: 20px;
+    width: 130px;
+    height: 200px;
+    }
+  .productCaroussel2{
+    border-radius: 20px;
+    width: 130px;
+    height: 200px;
+    margin-left: 150px;
+    }
+  .productCaroussel3{
+    border-radius: 20px;
+    width: 130px;
+    height: 200px;
+    margin-right: 150px;
+    }
+    .namePriceCaroussel h3 {
+      z-index: 1000;
+      font-size: 0.5em;
+      position: absolute;
+      top: 5%;
+      text-transform: capitalize;
+      color: var(--textColor);
+      max-width: 76%;
+    }
+    #slider .mhacaroussel {
+      width: 45%;
+      left: 25%;
+      border: solid 3px;
+      height: auto;
+  }
+  #slider .DBZ {
+    width: 40%;
+    left: 30%;
+    height: auto;
+  }
+#slider .DemonSlayercaroussel {
+  width: 55%;
+  left: 20%;
+  height: auto;
+  }
+  .bayCaroussel {
+    position: absolute;
+    left: 25%;
+  }
+  .bayCaroussel button {
+    padding: 8px 10px;
+    border-radius: 2px;
+    border: none;
+    background-color: #333d43;
+    color: white;
+    font-size: 7px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: .5s;
+  }
+  .namePriceCaroussel span {
+    position: absolute;
+    font-size: 0.7em;
+    right: 10%;
+    bottom: 32%;
+    color: var(--starColor);
+  }
+  .productCaroussel1 p {
+    position: absolute;
+    bottom: 15%;
+    font-size: 7px;
+    line-height: 15px;
+  }
+  .productCaroussel2 p {
+    position: absolute;
+    bottom: 15%;
+    font-size: 7px;
+    line-height: 15px;
+  }
+  .productCaroussel3 p {
+    position: absolute;
+    bottom: 15%;
+    font-size: 7px;
+    line-height: 15px;
+  }
+  #slider .New {
+    position: absolute;
+    width: 26%;
+    top: 40%;
+    left: 50%;
+    height: auto;
+}
+}

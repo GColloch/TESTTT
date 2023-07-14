@@ -1,0 +1,160 @@
+.products{
+  width: 100%;
+  align-self: center;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 100px;
+}
+.product{
+  position: relative;
+  background-color: var(--sectionBack);
+  margin-bottom: 50px;
+  width: 330px;
+  flex-direction: column;
+  padding: 20px 20px 120px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #dc799e, #f5ccbd);
+  transition: .3s;
+}
+.namePrice h3 {
+  z-index: 1000;
+  font-size: 1.3em;
+  position: absolute;
+  top: 5%;
+  text-transform: capitalize;
+  color: var(--textColor);
+  left: 20%;
+  font-family: 'Comme';
+}
+.product:hover{
+  transform: translateY(-15px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+.image{
+  padding-top: 150px;
+  width:100%;
+  height: 60%;
+  display: grid;
+  place-content: center;
+}
+.image img{
+  width: 230px;
+  height: 230px;
+}
+
+.image2{
+  padding-top: 70px;
+  width:100%;
+  height: 60%;
+  display: grid;
+  place-content: center;
+}
+.image2 img{
+  position: absolute;
+  top: 15%;
+  right: 20%;
+  width: 200px;
+  height: 250px;
+  border: solid 3px white;
+  border-radius: 5px;
+}
+
+.namePrice{
+  padding-top: 60px;
+  font-weight: 600;
+}
+.namePrice h3{
+  position: absolute;
+    font-Size: 1.4em;
+    right: 10%;
+    bottom: 25%;
+    color: white;
+    font-Family: 'Comme';
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+}
+.namePrice span {
+  position: absolute;
+  font-size: 1em;
+  right: 10%;
+  bottom: 20%;
+  color: white;
+  font-family: 'Comme';
+}
+.namePrice2 h3{
+  font-size: 1.4em;
+  text-transform: capitalize;
+  color: var(--textColor);
+}
+.product p{
+  font-size: 18px;
+  line-height: 25px;
+  padding-top: 90px;
+  padding-bottom: 100px;
+  color: white;
+  font-weight: 500;
+  font-family: 'Comme';
+}
+
+.stars svg{
+  font-size: 1.3em;
+  color: var(--starColor);
+}
+.bay{
+  position: absolute;
+  bottom: -10px;
+  left: 30%;
+}
+.bay button{
+  padding: 10px 20px;
+  border-radius: 2px;
+  border: none;
+  background-color: #333d43;
+  color: white;
+  font-size: 18px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: .5s;
+}
+.bay button:hover{
+  transform: scale(1.1);
+}
+
+
+
+@media screen and (min-width: 300px) {
+  h2{  
+    font-size: 25px;
+  }
+  .product {
+    height: 550px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  h2{
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .product p{
+    font-size: 16px;
+  }  
+  .namePrice span{ 
+  font-size: 1.1em;
+  }
+  .namePrice h3 {
+    max-width: 70%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+.product {
+  height: 450px;
+  }
+}
